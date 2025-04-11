@@ -1,6 +1,7 @@
 {
   "name": "lru_map",
   "version": "0.4.1",
+  "type": "module",
   "description": "Finite key-value map using the Least Recently Used (LRU) algorithm where the most recently used objects are keept in the map while less recently used items are evicted to make room for new ones.",
   "main": "lru.js",
   "types": "lru.d.ts",
@@ -35,7 +36,7 @@
   },
   "homepage": "https://github.com/rsms/js-lru#readme",
   "devDependencies": {
-    "esbuild": "^0.5.26",
+    "esbuild": "^0.25.2",
     "typescript": "^3.9.7"
   }
 }

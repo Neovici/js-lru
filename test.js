@@ -1,8 +1,7 @@
 // Test which will run in nodejs
 // $ node test.js
-// (Might work with other CommonJS-compatible environments)
-const assert = require('assert');
-const LRUMap = require('./dist/lru').LRUMap;
+import assert from 'assert';
+import { LRUMap } from './dist/lru.js';
 const asserteq = assert.equal;
 const tests = {
 
@@ -186,7 +185,7 @@ shift() {
 
 set() {
   // Note: v0.1 allows putting same key multiple times. v0.2 does not.
-  c = new LRUMap(4);
+  let c = new LRUMap(4);
   c.set('a', 1);
   c.set('a', 2);
   c.set('a', 3);
